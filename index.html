@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmet Durumu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hizmet Durumumuz</h1>
+        <p>Restoranımız şu anda bazı hizmetlerini sunamıyor olabilir. Lütfen durum hakkında bilgi almak için aşağıdaki butona tıklayın.</p>
+        
+        <!-- Hizmet Durumu Butonu -->
+        <button id="service-btn">Hizmet Durumu</button>
+
+        <!-- Üzgünüz mesajı -->
+        <div id="service-message" class="service-message">
+            <p>Üzgünüz, şu anda hizmet verememekteyiz. Çok yakında hizmetinizdeyiz!</p>
+        </div>
+    </div>
+
+    <script>
+        // Hizmet durumu butonuna tıklandığında mesajı göster
+        document.getElementById('service-btn').addEventListener('click', function() {
+            document.getElementById('service-message').style.display = 'block';  // Mesajı göster
+        });
+    </script>
+</body>
+</html>
